@@ -1,0 +1,192 @@
+.contact {
+	padding: 80px 0;
+	background-color: #ffffff;
+}
+
+.contact-subtitle {
+	text-align: center;
+	font-size: 1.2rem;
+	color: #7f8c8d;
+	margin-bottom: 3rem;
+}
+
+.contact-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 4rem;
+	margin-top: 3rem;
+}
+
+.booking-section {
+	background: #f8f9fa;
+	border-radius: 15px;
+	padding: 2rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.booking-widget {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+}
+
+.booking-widget iframe {
+	width: 100%;
+	height: 700px;
+	border: none;
+	display: block;
+}
+
+.booking-note {
+	text-align: center;
+	font-size: 0.9rem;
+	color: #7f8c8d;
+	margin-top: 1rem;
+	font-style: italic;
+}
+
+.contact-info {
+	background: #ffffff;
+}
+
+.contact-title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #2c3e50;
+	margin-bottom: 2rem;
+}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.contact-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.contact-icon {
+	font-size: 1.5rem;
+	flex-shrink: 0;
+	margin-top: 0.2rem;
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.contact-text strong {
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+.contact-text a {
+	color: #e74c3c;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+	color: #c0392b;
+	text-decoration: underline;
+}
+
+.contact-text span {
+	color: #555;
+}
+
+.social-links h4 {
+	color: #2c3e50;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+}
+
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.social-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.5rem 1rem;
+	background: #f8f9fa;
+	color: #555;
+	text-decoration: none;
+	border-radius: 20px;
+	font-size: 0.9rem;
+	transition: all 0.3s ease;
+	border: 1px solid #e9ecef;
+}
+
+.social-link:hover {
+	background: #e74c3c;
+	color: white;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 10px rgba(231, 76, 60, 0.3);
+}
+
+/* Mobile and tablet styles */
+@media (max-width: 768px) {
+	.contact {
+		padding: 60px 0;
+	}
+
+	.contact-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.booking-section {
+		padding: 1.5rem;
+	}
+
+	.booking-widget iframe {
+		height: 600px; /* Reduce height for mobile for better user experience */
+	}
+
+	.social-icons {
+		justify-content: center;
+	}
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+	.contact {
+		padding: 40px 0;
+	}
+
+	.booking-section {
+		padding: 1rem;
+		margin: 0 -10px; /* Expand to use more screen space */
+	}
+
+	.booking-widget iframe {
+		height: 500px; /* Further reduce height for small screens */
+	}
+
+	.contact-title {
+		font-size: 1.3rem;
+	}
+
+	.booking-title {
+		font-size: 1.3rem;
+	}
+}
