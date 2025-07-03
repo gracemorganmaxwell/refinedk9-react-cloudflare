@@ -32,16 +32,37 @@ export const Footer: React.FC = () => {
 								<a href="#reviews">Reviews</a>
 							</li>
 							<li>
-								<a href="#contact">Contact</a>
+								<a href="#contact">Book Now</a>
 							</li>
 						</ul>
 					</div>
 
-					<div className="footer-section">
+					<div className="footer-section contact-emphasis">
 						<h4 className="footer-title">Get In Touch</h4>
 						<div className="footer-contact">
-							<p>📧 refinedk-9grooming@outlook.com</p>
-							<p>📱 +64 27 397 7641</p>
+							<div className="contact-item">
+								<span className="contact-icon">📧</span>
+								<a
+									href="mailto:refinedk-9grooming@gmail.com"
+									className="contact-link"
+								>
+									refinedk-9grooming@gmail.com
+								</a>
+							</div>
+							<div className="contact-item">
+								<span className="contact-icon">📱</span>
+								<a href="tel:+64273977641" className="contact-link">
+									+64 27 397 7641
+								</a>
+							</div>
+							<div className="contact-item">
+								<span className="contact-icon">⏰</span>
+								<span className="contact-text">Mon-Sat 9:30AM - 8:00PM</span>
+							</div>
+							<div className="contact-item">
+								<span className="contact-icon">📍</span>
+								<span className="contact-text">Christchurch, New Zealand</span>
+							</div>
 						</div>
 					</div>
 

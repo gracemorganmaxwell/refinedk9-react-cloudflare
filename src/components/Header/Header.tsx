@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
 		<header className="header">
 			<div className="container">
 				<div className="logo">
-					<span className="logo-icon">🐾</span>
+					<img src="/logo.png" alt="Refined K-9 Logo" className="logo-icon" />
 					<span className="logo-text">Refined K-9</span>
 				</div>
 				<nav className="nav">

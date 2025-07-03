@@ -1,6 +1,6 @@
 .reviews {
 	padding: 80px 0;
-	background-color: #ffffff;
+	background-color: #1a1a1a;
 }
 
 .reviews-container {
@@ -30,18 +30,18 @@
 }
 
 .review-card {
-	background: #f8f9fa;
+	background: #2d2d2d;
 	border-radius: 15px;
 	padding: 2rem;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease;
-	border-left: 4px solid #e74c3c;
+	border-left: 4px solid rgb(10, 213, 252);
 	position: relative;
 }
 
 .review-card:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .review-card.carousel {
@@ -116,22 +116,22 @@
 }
 
 .service-type-badge {
-	background: rgba(231, 76, 60, 0.1);
-	color: #e74c3c;
+	background: rgba(10, 213, 252, 0.1);
+	color: rgb(10, 213, 252);
 	padding: 0.25rem 0.5rem;
 	border-radius: 12px;
 	font-size: 0.7rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	border: 1px solid rgba(231, 76, 60, 0.3);
+	border: 1px solid rgba(10, 213, 252, 0.3);
 }
 
 /* Review Content */
 .review-text {
 	font-size: 1rem;
 	line-height: 1.6;
-	color: #555;
+	color: #cccccc;
 	margin-bottom: 1.5rem;
 	font-style: italic;
 }
@@ -163,14 +163,14 @@
 	height: 100%;
 	border-radius: 50%;
 	object-fit: cover;
-	border: 2px solid #ffffff;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border: 2px solid #2d2d2d;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease;
 }
 
 .avatar-image:hover {
 	transform: scale(1.05);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .avatar-initials {
@@ -185,14 +185,14 @@
 	font-size: 0.8rem;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
-	border: 2px solid #ffffff;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	border: 2px solid #2d2d2d;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 	transition: all 0.3s ease;
 }
 
 .avatar-initials:hover {
 	transform: scale(1.05);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .avatar-initials.hidden {
@@ -364,4 +364,146 @@
 
 .review-card.list .avatar-initials {
 	font-size: 0.9rem;
+}
+
+/* See More Button for Reviews */
+.reviews-see-more {
+	display: flex;
+	justify-content: center;
+	margin: 2rem 0;
+}
+
+.see-more-reviews-button {
+	background: linear-gradient(135deg, rgb(10, 213, 252), rgb(131, 88, 170));
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	font-size: 1.1rem;
+	font-weight: 600;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(10, 213, 252, 0.3);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.see-more-reviews-button:hover {
+	background: linear-gradient(135deg, rgb(131, 88, 170), rgb(204, 43, 219));
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(204, 43, 219, 0.4);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.reviews {
+		padding: 60px 0;
+	}
+
+	.reviews-container.grid {
+		grid-template-columns: 1fr;
+		gap: 1.5rem;
+	}
+
+	.reviews-container.carousel {
+		gap: 1rem;
+	}
+
+	.review-card {
+		padding: 1.5rem;
+	}
+
+	.review-card.carousel {
+		flex: 0 0 300px;
+	}
+
+	.review-header {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.review-footer {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.review-author-section {
+		justify-content: center;
+	}
+
+	.reviewer-avatar {
+		width: 35px;
+		height: 35px;
+	}
+
+	.avatar-initials {
+		width: 35px;
+		height: 35px;
+		font-size: 0.7rem;
+	}
+
+	.source-label {
+		font-size: 0.5rem;
+	}
+
+	.see-more-reviews-button {
+		padding: 0.9rem 1.8rem;
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.review-card {
+		padding: 1rem;
+	}
+
+	.review-text {
+		font-size: 0.9rem;
+	}
+
+	.reviews-container.carousel {
+		gap: 0.8rem;
+	}
+
+	.review-card.carousel {
+		flex: 0 0 280px;
+	}
+
+	.review-badges {
+		flex-direction: column;
+		gap: 0.3rem;
+	}
+
+	.review-source,
+	.service-type-badge {
+		font-size: 0.6rem;
+		padding: 0.2rem 0.4rem;
+	}
+
+	.reviewer-avatar {
+		width: 30px;
+		height: 30px;
+	}
+
+	.avatar-initials {
+		width: 30px;
+		height: 30px;
+		font-size: 0.6rem;
+	}
+
+	.review-author strong {
+		font-size: 0.9rem;
+	}
+
+	.review-title,
+	.pet-name {
+		font-size: 0.8rem;
+	}
+
+	.see-more-reviews-button {
+		padding: 0.8rem 1.5rem;
+		font-size: 0.9rem;
+		width: 100%;
+		max-width: 300px;
+	}
 }

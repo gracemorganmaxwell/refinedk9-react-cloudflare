@@ -1,5 +1,5 @@
 .footer {
-	background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+	background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 	color: white;
 	padding: 60px 0 20px;
 }
@@ -30,13 +30,13 @@
 .footer-logo .logo-text {
 	font-size: 1.3rem;
 	font-weight: 700;
-	color: #e74c3c;
+	color: rgb(10, 213, 252);
 }
 
 .footer-tagline {
 	font-size: 0.9rem;
 	line-height: 1.6;
-	color: #bdc3c7;
+	color: #cccccc;
 	max-width: 300px;
 }
 
@@ -44,7 +44,7 @@
 	font-size: 1.1rem;
 	font-weight: 600;
 	margin-bottom: 1rem;
-	color: #ecf0f1;
+	color: #ffffff;
 }
 
 .footer-links {
@@ -55,26 +55,64 @@
 }
 
 .footer-links a {
-	color: #bdc3c7;
+	color: #cccccc;
 	text-decoration: none;
 	font-size: 0.9rem;
 	transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-	color: #e74c3c;
+	color: rgb(10, 213, 252);
+}
+
+/* Enhanced Contact Section */
+.contact-emphasis {
+	background: rgba(10, 213, 252, 0.05);
+	border-radius: 10px;
+	padding: 1.5rem;
+	border: 1px solid rgba(10, 213, 252, 0.2);
+}
+
+.contact-emphasis .footer-title {
+	color: rgb(10, 213, 252);
+	font-size: 1.2rem;
+	margin-bottom: 1.5rem;
 }
 
 .footer-contact {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
+	gap: 1rem;
 }
 
-.footer-contact p {
+.footer-contact .contact-item {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.footer-contact .contact-icon {
+	font-size: 1.1rem;
+	color: rgb(10, 213, 252);
+	flex-shrink: 0;
+}
+
+.footer-contact .contact-link {
+	color: #ffffff;
+	text-decoration: none;
 	font-size: 0.9rem;
-	color: #bdc3c7;
-	margin: 0;
+	transition: color 0.3s ease;
+	font-weight: 500;
+}
+
+.footer-contact .contact-link:hover {
+	color: rgb(10, 213, 252);
+	text-decoration: underline;
+}
+
+.footer-contact .contact-text {
+	color: #cccccc;
+	font-size: 0.9rem;
 }
 
 .footer-social {
@@ -84,24 +122,24 @@
 }
 
 .footer-social .social-link {
-	color: #bdc3c7;
+	color: #cccccc;
 	text-decoration: none;
 	font-size: 0.9rem;
 	transition: color 0.3s ease;
 }
 
 .footer-social .social-link:hover {
-	color: #e74c3c;
+	color: rgb(10, 213, 252);
 }
 
 .footer-bottom {
-	border-top: 1px solid #34495e;
+	border-top: 1px solid #2d2d2d;
 	padding-top: 2rem;
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: #95a5a6;
+	color: #cccccc;
 	font-size: 0.9rem;
 }
 
@@ -119,6 +157,11 @@
 
 	.footer-tagline {
 		max-width: none;
+	}
+
+	.contact-emphasis {
+		text-align: left;
+		padding: 1rem;
 	}
 
 	.footer-bottom {
