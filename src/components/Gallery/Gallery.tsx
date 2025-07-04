@@ -206,6 +206,13 @@ export const Gallery: React.FC<GalleryProps> = ({
 			title: "Showcase of Quality",
 			category: "full-service",
 		},
+		{
+			id: 29,
+			alt: "Professional dog grooming showcase",
+			src: "/src/assets/images/gallery/twentynine.png",
+			title: "Professional Grooming Showcase",
+			category: "full-service",
+		},
 	];
 
 	const galleryItems = items || defaultGalleryItems;
