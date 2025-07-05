@@ -54,12 +54,35 @@ export const Services: React.FC = () => {
 					Our services are designed to enhance your dog's natural beauty while
 					prioritising their comfort and well-being.
 				</p>
+				<div className="pricing-note">
+					<p className="pricing-text">
+						<strong>💰 Pricing:</strong> Service costs depend on your dog's
+						size, age, and how long it's been since their last groom. For the
+						most accurate quote or estimate, please{" "}
+						<a
+							href="#contact"
+							className="booking-link"
+							onClick={() =>
+								document
+									.getElementById("contact")
+									?.scrollIntoView({ behavior: "smooth" })
+							}
+						>
+							use our booking system
+						</a>{" "}
+						and follow the prompts for personalised pricing.
+					</p>
+				</div>
 				<div className="services-grid">
 					{services.map((service, index) => (
 						<div key={index} className="service-card">
-							<div className="service-icon">{service.icon}</div>
-							<h3 className="service-title">{service.title}</h3>
-							<p className="service-description">{service.description}</p>
+							<div className="service-header">
+								<div className="service-title-row">
+									<div className="service-icon">{service.icon}</div>
+									<h3 className="service-title">{service.title}</h3>
+								</div>
+								<p className="service-description">{service.description}</p>
+							</div>
 							<ul className="service-features">
 								{service.features.map((feature, featureIndex) => (
 									<li key={featureIndex} className="service-feature">

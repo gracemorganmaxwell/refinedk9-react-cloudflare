@@ -4,7 +4,7 @@
 }
 
 .gallery-subtitle {
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 	color: #7f8c8d;
 	margin-bottom: 3rem;
@@ -112,19 +112,19 @@
 }
 
 .gallery-note {
-	text-align: center;
+	text-align: left;
 	font-size: 0.9rem;
 	color: #95a5a6;
 	font-style: italic;
 	max-width: 600px;
-	margin: 0 auto;
+	margin: 0;
 	line-height: 1.5;
 }
 
 /* See More Button */
 .gallery-see-more {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	margin: 2rem 0;
 }
 
@@ -150,7 +150,7 @@
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 872px) {
 	.gallery {
 		padding: 60px 0;
 	}
@@ -175,6 +175,10 @@
 	.gallery-category {
 		font-size: 0.6rem;
 		padding: 0.2rem 0.4rem;
+	}
+
+	.gallery-see-more {
+		justify-content: center;
 	}
 
 	.see-more-button {
@@ -205,7 +209,5 @@
 	.see-more-button {
 		padding: 0.8rem 1.5rem;
 		font-size: 0.9rem;
-		width: 100%;
-		max-width: 300px;
 	}
 }

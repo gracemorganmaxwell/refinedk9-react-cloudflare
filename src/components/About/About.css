@@ -9,12 +9,14 @@
 	margin: 0 auto;
 }
 
-.about-subtitle {
-	font-size: 1.8rem;
-	font-weight: 600;
-	color: #e74c3c;
+/* About text container for mobile padding */
+.about-text-container {
 	margin-bottom: 2rem;
-	font-style: italic;
+}
+
+/* Divider line */
+.about-divider {
+	display: none; /* Hidden on desktop */
 }
 
 .about-text {
@@ -54,28 +56,78 @@
 }
 
 /* Mobile styles */
-@media (max-width: 768px) {
+@media (max-width: 872px) {
 	.about {
 		padding: 60px 0;
 	}
 
+	/* Header is now left-aligned globally */
+
+	/* Add side padding to text container */
+	.about-text-container {
+		padding: 0 1.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	/* Show and style divider line */
+	.about-divider {
+		display: block;
+		width: 75%;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, #e74c3c, transparent);
+		margin: 2rem auto;
+		border: none;
+	}
+
+	/* Better feature display */
 	.about-features {
-		gap: 2rem;
+		gap: 1.5rem;
+		margin-top: 2rem;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
 	}
 
 	.feature {
-		max-width: 150px;
+		max-width: 120px;
+		gap: 0.25rem;
 	}
 
 	.feature-icon {
-		font-size: 2rem;
+		font-size: 1.2rem;
+		margin-bottom: 0.25rem;
+	}
+
+	.feature-text {
+		font-size: 16px;
+		line-height: 1.2;
+		font-weight: 500;
 	}
 }
 
 @media (max-width: 480px) {
+	/* Increase side padding for smaller screens */
+	.about-text-container {
+		padding: 0 2rem;
+	}
+
+	/* Adjust features for small screens */
 	.about-features {
-		flex-direction: column;
-		align-items: center;
-		gap: 1.5rem;
+		flex-direction: row;
+		justify-content: space-around;
+		gap: 1rem;
+		margin-top: 1.5rem;
+	}
+
+	.feature {
+		max-width: 100px;
+	}
+
+	.feature-text {
+		font-size: 14px;
+	}
+
+	.feature-icon {
+		font-size: 1rem;
 	}
 }

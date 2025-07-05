@@ -8,7 +8,7 @@ export const Footer: React.FC = () => {
 		<footer className="footer">
 			<div className="container">
 				<div className="footer-content">
-					<div className="footer-section">
+					<div className="footer-section contact-emphasis">
 						<div className="footer-logo">
 							<span className="logo-icon">🐾</span>
 							<span className="logo-text">Refined K-9 Dog Grooming</span>
@@ -17,70 +17,68 @@ export const Footer: React.FC = () => {
 							A compassionate and eco-friendly mobile grooming service guided by
 							the philosophy of humanity over vanity.
 						</p>
-					</div>
-
-					<div className="footer-section">
-						<h4 className="footer-title">Quick Links</h4>
-						<ul className="footer-links">
-							<li>
-								<a href="#about">About</a>
-							</li>
-							<li>
-								<a href="#services">Services</a>
-							</li>
-							<li>
-								<a href="#reviews">Reviews</a>
-							</li>
-							<li>
-								<a href="#contact">Book Now</a>
-							</li>
-						</ul>
-					</div>
-
-					<div className="footer-section contact-emphasis">
-						<h4 className="footer-title">Get In Touch</h4>
-						<div className="footer-contact">
-							<div className="contact-item">
-								<span className="contact-icon">📧</span>
-								<a
-									href="mailto:refinedk-9grooming@gmail.com"
-									className="contact-link"
-								>
-									refinedk-9grooming@gmail.com
-								</a>
+						<div className="footer-contact-social">
+							<div className="contact-column">
+								<h4 className="footer-title">Get In Touch</h4>
+								<div className="footer-contact">
+									<div className="contact-item">
+										<span className="contact-icon">📧</span>
+										<a
+											href="mailto:refinedk9doggrooming94@gmail.com"
+											className="contact-link"
+										>
+											refinedk9doggrooming94@gmail.com
+										</a>
+									</div>
+									<div className="contact-item">
+										<span className="contact-icon">📱</span>
+										<a href="tel:+64273977641" className="contact-link">
+											+64 27 397 7641
+										</a>
+									</div>
+									<div className="contact-item">
+										<span className="contact-icon">⏰</span>
+										<span className="contact-text">
+											Mon-Sat 9:30AM - 8:00PM
+										</span>
+									</div>
+									<div className="contact-item">
+										<span className="contact-icon">📍</span>
+										<span className="contact-text">
+											Christchurch, New Zealand
+										</span>
+									</div>
+								</div>
 							</div>
-							<div className="contact-item">
-								<span className="contact-icon">📱</span>
-								<a href="tel:+64273977641" className="contact-link">
-									+64 27 397 7641
-								</a>
+							<div className="social-column">
+								<h4 className="footer-title">Follow Us</h4>
+								<div className="footer-social">
+									<a
+										href="https://www.instagram.com/refinedk9doggrooming?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+										target="_blank"
+										rel="noopener noreferrer"
+										className="social-link"
+									>
+										📱 Instagram
+									</a>
+									<a
+										href="https://www.tiktok.com/@therefinedk9"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="social-link"
+									>
+										🎵 TikTok
+									</a>
+									<a
+										href="https://www.facebook.com/profile.php?id=100088409241507"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="social-link"
+									>
+										🌐 Facebook
+									</a>
+								</div>
 							</div>
-							<div className="contact-item">
-								<span className="contact-icon">⏰</span>
-								<span className="contact-text">Mon-Sat 9:30AM - 8:00PM</span>
-							</div>
-							<div className="contact-item">
-								<span className="contact-icon">📍</span>
-								<span className="contact-text">Christchurch, New Zealand</span>
-							</div>
-						</div>
-					</div>
-
-					<div className="footer-section">
-						<h4 className="footer-title">Follow Us</h4>
-						<div className="footer-social">
-							<a href="#" className="social-link">
-								📸 Instagram
-							</a>
-							<a href="#" className="social-link">
-								🎵 TikTok
-							</a>
-							<a href="#" className="social-link">
-								📘 Facebook
-							</a>
-							<a href="#" className="social-link">
-								💬 WhatsApp
-							</a>
 						</div>
 					</div>
 				</div>

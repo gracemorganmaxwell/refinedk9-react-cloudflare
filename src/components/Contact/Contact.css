@@ -4,7 +4,7 @@
 }
 
 .contact-subtitle {
-	text-align: center;
+	text-align: left;
 	font-size: 1.2rem;
 	color: #cccccc;
 	margin-bottom: 3rem;
@@ -16,8 +16,8 @@
 	padding: 3rem;
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 	max-width: 600px;
-	margin: 0 auto;
-	text-align: center;
+	margin: 0;
+	text-align: left;
 }
 
 .booking-title {
@@ -30,7 +30,7 @@
 .booking-content {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	gap: 2rem;
 }
 
@@ -63,21 +63,21 @@
 }
 
 .booking-note {
-	text-align: center;
+	text-align: left;
 	font-size: 0.9rem;
 	color: #cccccc;
 	font-style: italic;
 }
 
 /* Mobile and tablet styles */
-@media (max-width: 768px) {
+@media (max-width: 872px) {
 	.contact {
 		padding: 60px 0;
 	}
 
 	.booking-section {
 		padding: 2rem;
-		margin: 0 1rem;
+		margin: 0;
 	}
 
 	.booking-title {
@@ -86,6 +86,10 @@
 
 	.booking-description {
 		font-size: 1rem;
+	}
+
+	.booking-content {
+		align-items: center;
 	}
 
 	.booking-button {
@@ -102,7 +106,7 @@
 
 	.booking-section {
 		padding: 1.5rem;
-		margin: 0 0.5rem;
+		margin: 0;
 	}
 
 	.booking-title {

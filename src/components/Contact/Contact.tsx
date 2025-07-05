@@ -1,14 +1,8 @@
 import React from "react";
 import "./Contact.css";
+import { BookNowButton } from "../common/BookNowButton";
 
 export const Contact: React.FC = () => {
-	const handleBookNow = () => {
-		window.open(
-			"https://book.itsallsavvy.com?id=683ac52c86c8d06b19ae1ecd&bookingDefinitionId=683ac531e7008b2a82558da7",
-			"_blank"
-		);
-	};
-
 	return (
 		<section id="contact" className="contact">
 			<div className="container">
@@ -24,9 +18,9 @@ export const Contact: React.FC = () => {
 							Ready to give your pup the pampering they deserve? Click below to
 							book your appointment with our easy-to-use booking system.
 						</p>
-						<button className="booking-button" onClick={handleBookNow}>
+						<BookNowButton variant="primary" size="large">
 							📅 Book Now
-						</button>
+						</BookNowButton>
 						<p className="booking-note">
 							* The booking form will open in a new tab for your convenience.
 						</p>

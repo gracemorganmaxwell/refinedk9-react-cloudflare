@@ -17,12 +17,7 @@ export interface ReviewItem {
 	initials?: string; // Fallback initials if no avatar
 }
 
-export type ReviewSource =
-	| "google"
-	| "facebook"
-	| "direct"
-	| "yelp"
-	| "website";
+export type ReviewSource = "google" | "facebook" | "direct" | "website";
 
 export type ServiceType =
 	| "full-groom"
