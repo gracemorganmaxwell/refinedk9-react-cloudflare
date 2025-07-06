@@ -199,18 +199,18 @@
 	.hero-title-section {
 		grid-row: 1;
 		margin-top: 2rem;
-		margin-bottom: -1.5rem;
+		margin-bottom: 0;
 	}
 
 	.hero-image {
 		grid-row: 2;
 		justify-self: center;
-		margin: 0;
+		margin: 2rem 0;
 	}
 
 	.hero-subtitle-section {
 		grid-row: 3;
-		margin-top: -1.5rem;
+		margin-top: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -259,18 +259,18 @@
 	.hero-title-section {
 		grid-row: 1;
 		margin-top: 2rem;
-		margin-bottom: -2rem;
+		margin-bottom: 0;
 	}
 
 	.hero-image {
 		grid-row: 2;
 		justify-self: center;
-		margin: 0;
+		margin: 1.5rem 0;
 	}
 
 	.hero-subtitle-section {
 		grid-row: 3;
-		margin-top: -2rem;
+		margin-top: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -311,18 +311,18 @@
 	.hero-title-section {
 		grid-row: 1;
 		margin-top: 1.5rem;
-		margin-bottom: -2.5rem;
+		margin-bottom: 0;
 	}
 
 	.hero-image {
 		grid-row: 2;
 		justify-self: center;
-		margin: 0;
+		margin: 1rem 0;
 	}
 
 	.hero-subtitle-section {
 		grid-row: 3;
-		margin-top: -2.5rem;
+		margin-top: 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
