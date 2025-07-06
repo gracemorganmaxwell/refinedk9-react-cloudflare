@@ -6,9 +6,9 @@ export const Hero: React.FC = () => {
 	const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
 	const heroImages = [
-		"/src/assets/images/hero/hero_two.jpg",
-		"/src/assets/images/hero/hero_three.jpg",
-		"/src/assets/images/hero/hero_four.jpg",
+		"/hero/hero_two.jpg",
+		"/hero/hero_three.jpg",
+		"/hero/hero_four.jpg",
 	];
 
 	// Rotate through hero images every 5 seconds
