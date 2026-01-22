@@ -59,11 +59,7 @@ export const Hero: React.FC = () => {
 						<BookNowButton
 							variant="secondary"
 							size="large"
-							onClick={() =>
-								document
-									.getElementById("contact")
-									?.scrollIntoView({ behavior: "smooth" })
-							}
+							href="https://book.itsallsavvy.com?id=683ac52c86c8d06b19ae1ecd&bookingDefinitionId=683ac531e7008b2a82558da7" target="_blank"
 						/>
 					</div>
 
@@ -81,11 +77,7 @@ export const Hero: React.FC = () => {
 						<BookNowButton
 							variant="secondary"
 							size="large"
-							onClick={() =>
-								document
-									.getElementById("contact")
-									?.scrollIntoView({ behavior: "smooth" })
-							}
+							href="https://book.itsallsavvy.com?id=683ac52c86c8d06b19ae1ecd&bookingDefinitionId=683ac531e7008b2a82558da7" target="_blank"
 						/>
 					</div>
 				</div>

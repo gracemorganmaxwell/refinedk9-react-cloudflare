@@ -123,13 +123,6 @@ export const Gallery: React.FC<GalleryProps> = ({
 			category: "grooming",
 		},
 		{
-			id: 17,
-			alt: "Cute small white dog with black flopp ears after a groom, wearing a pink neck bow",
-			src: "/gallery/17.png",
-			title: "A White Dog with Black Floppy Ears",
-			category: "full-service",
-		},
-		{
 			id: 18,
 			alt: "Black medium sized dog, with floppy ears after a groom, wearing a red bowtie",
 			src: "/gallery/18.png",

@@ -58,7 +58,7 @@ export const Header: React.FC = () => {
 					<a href="#contact" className="nav-link">
 						Contact
 					</a>
-					<BookNowButton variant="primary" size="medium" href="#contact" />
+					<BookNowButton variant="primary" size="medium" href="https://book.itsallsavvy.com?id=683ac52c86c8d06b19ae1ecd&bookingDefinitionId=683ac531e7008b2a82558da7" target="_blank" />
 				</nav>
 
 				{/* Hamburger Menu Button */}
@@ -108,7 +108,8 @@ export const Header: React.FC = () => {
 						<BookNowButton
 							variant="primary"
 							size="large"
-							href="#contact"
+							href="https://book.itsallsavvy.com?id=683ac52c86c8d06b19ae1ecd&bookingDefinitionId=683ac531e7008b2a82558da7"
+							target="_blank"
 							className="book-now-button--mobile-cta"
 							onClick={handleMenuItemClick}
 						/>
